@@ -1,53 +1,327 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indra Maulana Agung - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indra Maulana Agung — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Indra Maulana Agung</h1>
-    <p>UI/UX Designer & Front End Developer</p>
-  </header>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">IMA<span style="color:var(--muted)">.</span>dev</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <section id="about" class="about">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah seorang UI/UX Designer dan Front End Developer yang fokus pada pembuatan desain modern, responsif, dan user-friendly.</p>
-  </section>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-circle c1"></div>
+  <div class="hero-bg-circle c2"></div>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
+  <div class="hero-left">
+    <div class="hero-tag">Available for Work</div>
+    <h1 class="hero-name">
+      Indra Maulana
+      <span>Agung</span>
+    </h1>
+    <div class="hero-roles">
+      <span class="role-pill accent">UI/UX Designer</span>
+      <span class="role-pill">Frontend Developer</span>
+    </div>
+    <p class="hero-desc">
+      Merancang pengalaman digital yang indah dan intuitif — dari wireframe hingga kode yang berjalan di browser. Saya percaya bahwa desain yang baik adalah desain yang tidak terlihat.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Lihat Karya</a>
+      <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+    </div>
+  </div>
 
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Website portfolio modern menggunakan HTML, CSS, dan JavaScript.</p>
+  <div class="hero-right">
+    <div class="avatar-frame">
+      <div class="frame-bg"></div>
+      <div class="frame-accent"></div>
+      <div class="frame-inner">
+        <div class="avatar-initial">IM</div>
+        <div class="avatar-info">
+          <h3>Indra Maulana Agung</h3>
+          <p>UI/UX · Frontend Dev</p>
+        </div>
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Tahun Exp</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Proyek</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Klien</div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-tag">MEDAN — ID</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">// Keahlian</div>
+  <h2 class="section-title">Apa yang<br>Saya Kuasai</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">✦</div>
+      <div class="skill-name">UI Design</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px">Merancang antarmuka yang estetis dan fungsional dengan pendekatan desain sistematis.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Auto Layout</span>
+        <span class="skill-tag">Design System</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◈</div>
+      <div class="skill-name">UX Research</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px">Memahami pengguna melalui riset mendalam untuk menciptakan solusi berbasis data.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">User Testing</span>
+        <span class="skill-tag">Wireframing</span>
+        <span class="skill-tag">Prototyping</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⌘</div>
+      <div class="skill-name">Frontend Dev</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px">Mengubah desain menjadi kode yang bersih, responsif, dan performan di semua perangkat.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⬡</div>
+      <div class="skill-name">Branding</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-top:6px">Membangun identitas visual yang kuat dan konsisten untuk produk digital maupun fisik.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Logo</span>
+        <span class="skill-tag">Tipografi</span>
+        <span class="skill-tag">Color System</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label">// Portofolio</div>
+      <h2 class="section-title">Proyek<br>Pilihan</h2>
+    </div>
+  </div>
+
+  <div class="project-grid">
+
+    <div class="project-card featured">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0d0d1a,#1a0d2e)">
+        <div class="mock-ui">
+          <div class="mock-bar accent"></div>
+          <div class="mock-bar half"></div>
+          <div class="mock-blocks">
+            <div class="mock-block alt"></div>
+            <div class="mock-block"></div>
+            <div class="mock-block alt"></div>
+          </div>
+          <div class="mock-bar short"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">01 — Featured</div>
+        <h3 class="project-title">Dashboard Analytics App</h3>
+        <p class="project-desc">Platform analitik real-time dengan visualisasi data interaktif dan sistem desain yang komprehensif. Dibangun dari nol — mulai dari riset pengguna, wireframe, hingga implementasi frontend.</p>
+        <div class="project-meta">
+          <div class="project-stack">
+            <span class="stack-chip">Figma</span>
+            <span class="stack-chip">React</span>
+            <span class="stack-chip">Tailwind</span>
+            <span class="stack-chip">D3.js</span>
+          </div>
+          <a href="#" class="project-link">Lihat →</a>
+        </div>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>UI Mobile App</h3>
-      <p>Desain aplikasi mobile dengan pendekatan user-centered design.</p>
+    <div class="project-card">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a0a,#0d2d0d)">
+        <div class="mock-ui">
+          <div class="mock-bar" style="background:var(--accent);width:50%"></div>
+          <div class="mock-bar"></div>
+          <div class="mock-blocks">
+            <div class="mock-block" style="background:rgba(200,255,0,.1)"></div>
+            <div class="mock-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">02</div>
+        <h3 class="project-title">E-Commerce Mobile App</h3>
+        <p class="project-desc">Desain UI/UX aplikasi belanja mobile-first dengan alur checkout yang disederhanakan dan konversi tinggi.</p>
+        <div class="project-meta">
+          <div class="project-stack">
+            <span class="stack-chip">Figma</span>
+            <span class="stack-chip">Prototyping</span>
+          </div>
+          <a href="#" class="project-link">Lihat →</a>
+        </div>
+      </div>
     </div>
 
-  </section>
+    <div class="project-card">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0d0a1a,#1a0a0d)">
+        <div class="mock-ui">
+          <div class="mock-bar" style="background:var(--accent2);width:60%"></div>
+          <div class="mock-blocks">
+            <div class="mock-block" style="background:rgba(124,92,252,.2)"></div>
+            <div class="mock-block"></div>
+            <div class="mock-block" style="background:rgba(124,92,252,.1)"></div>
+          </div>
+          <div class="mock-bar short"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-num">03</div>
+        <h3 class="project-title">Company Landing Page</h3>
+        <p class="project-desc">Website company profile dengan animasi halus, performa tinggi, dan desain yang mencerminkan identitas brand.</p>
+        <div class="project-meta">
+          <div class="project-stack">
+            <span class="stack-chip">HTML/CSS</span>
+            <span class="stack-chip">JS</span>
+            <span class="stack-chip">GSAP</span>
+          </div>
+          <a href="#" class="project-link">Lihat →</a>
+        </div>
+      </div>
+    </div>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: indra@email.com</p>
-    <p>Instagram: @indra.dev</p>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Indra Maulana Agung</p>
-  </footer>
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-label">// Cara Kerja</div>
+  <h2 class="section-title">Proses<br>Desain Saya</h2>
 
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Discover</div>
+      <p class="step-desc">Riset mendalam tentang pengguna, kompetitor, dan konteks bisnis untuk memahami masalah yang sebenarnya.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Define</div>
+      <p class="step-desc">Mendefinisikan problem statement yang jelas dan menetapkan tujuan desain yang terukur.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Design</div>
+      <p class="step-desc">Iterasi cepat dari sketsa kasar ke wireframe hingga prototype hi-fi yang dapat diuji.</p>
+      <div class="step-arrow">→</div>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Deliver</div>
+      <p class="step-desc">Mengimplementasikan desain ke kode berkualitas tinggi dan handoff yang rapi untuk tim developer.</p>
+      <div class="step-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label">// Kontak</div>
+    <h2 class="section-title">Mari Berkolaborasi</h2>
+    <p style="margin-top:20px;font-size:15px;color:var(--muted);line-height:1.7">
+      Punya proyek menarik? Saya selalu terbuka untuk diskusi dan kesempatan baru.
+    </p>
+    <a href="mailto:indra@email.com" class="contact-email">indra@email.com</a>
+    <div class="social-row">
+      <a href="#" class="social-link">LinkedIn</a>
+      <a href="#" class="social-link">Dribbble</a>
+      <a href="#" class="social-link">GitHub</a>
+      <a href="#" class="social-link">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span class="footer-dot">·</span> Indra Maulana Agung</p>
+  <p>Designed & Developed with ♥ in Medan</p>
+</footer>
+
+<script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursor-ring');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove', e=>{
+    mx=e.clientX; my=e.clientY;
+    cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+  });
+  function animRing(){
+    rx+=(mx-rx)*.12; ry+=(my-ry)*.12;
+    ring.style.left=rx+'px'; ring.style.top=ry+'px';
+    requestAnimationFrame(animRing);
+  }
+  animRing();
+
+  // Hover effects on interactive elements
+  document.querySelectorAll('a,button,.project-card,.skill-card,.btn').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{
+      cursor.style.width='20px'; cursor.style.height='20px';
+      ring.style.width='60px'; ring.style.height='60px';
+    });
+    el.addEventListener('mouseleave',()=>{
+      cursor.style.width='10px'; cursor.style.height='10px';
+      ring.style.width='36px'; ring.style.height='36px';
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.style.opacity='1';
+        e.target.style.transform='translateY(0)';
+      }
+    });
+  },{threshold:.15});
+
+  document.querySelectorAll('.skill-card,.project-card,.process-step').forEach(el=>{
+    el.style.opacity='0';
+    el.style.transform='translateY(20px)';
+    el.style.transition='opacity .6s ease, transform .6s ease';
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
